@@ -1,6 +1,6 @@
 # 30DaysPowerQueryChallenge
 
-This repository is all about query folding using M Query to optimize how data transformation perform faster. It's by @itsnotaboutthecell on Youtube.
+This repository is all about query folding using M Query to optimize how data transformation perform faster. It's by [@itsnotaboutthecell](https://github.com/itsnotaboutthecell) on Youtube.
 
 I will be documenting my steps here and provide the solution along with it. In each day, I solved the challenge and input the solution to query fold at the end of it.
 
