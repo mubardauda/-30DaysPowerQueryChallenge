@@ -8,6 +8,8 @@ Select the [ResellerKey], [BusinessType], [ResellerName], [NumberEmployees], [Pr
 */
 //NOTE: There is a merged column of DimReseller and DimGeography in the DimReseller Table. So I expand it, instead of creating a new merge for both table as instructed
 
+// MY SOLUTION
+
 let
     Source = Sql.Database("MUBAR\SQLEXPRESS", "AdventureWorksDW2017"),
     dbo_DimReseller = Source{[Schema = "dbo", Item = "DimReseller"]}[Data],
@@ -39,7 +41,7 @@ let
 in
     #"Removed Other Columns"
 
-/*Solution as Query Folding*/
+// SOLUTION TO THE CHALLENGE
 https://github.com/itsnotaboutthecell/powerquerym/blob/master/%2330DQUERY/Day%2002.pq
 
 let

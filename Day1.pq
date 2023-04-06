@@ -5,6 +5,7 @@ Select the [EmployeeKey], [Gender], [BirthDate] and a new merged [FullName] colu
 concatenation of [FirstName], [MiddleName] and [LastName] with a space separator for all employees with a [BirthDate] in the year 1974.
 */
 
+// MY SOLUTION
 
 let
     Source = Sql.Database("MUBAR\SQLEXPRESS", "AdventureWorksDW2017"),
@@ -19,7 +20,7 @@ in
     #"Removed Duplicates"
 
 
-/*Solution to Query Folding*/
+// SOLUTION TO THE CHALLENGE
 https://github.com/itsnotaboutthecell/powerquerym/blob/master/%2330DQUERY/Day%2001.pq
  let
     Source = Sql.Databases("localhost"),
