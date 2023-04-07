@@ -1,6 +1,4 @@
 /* Problem Challenge:
-Database: AdventureWorksDW2017
-Entity: DimProduct , FactResellerSales
 
 Instructions:
 Select the [ProductKey], [EnglishProductName] and an aggregated [TotalRevenue] column which is the
