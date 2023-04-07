@@ -1,5 +1,4 @@
-/* Database: WideWorldImportersDW
-Entity: Fact.Order
+/* Problem Challenge
 
 Instructions:
 Select [OrderKey] and [Description] where the modulo of the [Description] length divided by 10 is equal to 1.*/
