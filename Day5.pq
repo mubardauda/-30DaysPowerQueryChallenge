@@ -1,5 +1,4 @@
-/* Database: WideWorldImportersDW
-Entity: Dimension.Employee
+/* Problem Challenge
 
 Instructions:
 Select the [Employee Key], [Employee], [Is Salesperson], [Valid From] and [Valid To] where the following two conditions are met –
