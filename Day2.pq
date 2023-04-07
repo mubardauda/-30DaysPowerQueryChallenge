@@ -1,6 +1,4 @@
 /* Problem Challenge:
-Database: AdventureWorksDW2017
-Entity: DimReseller, DimGeography
 
 Instructions:
 Select the [ResellerKey], [BusinessType], [ResellerName], [NumberEmployees], [ProductLine],
