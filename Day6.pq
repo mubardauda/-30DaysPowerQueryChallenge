@@ -15,7 +15,7 @@ in
 
 
 // SOLUTION TO THE CHALLENGE
-https://github.com/itsnotaboutthecell/powerquerym/blob/master/%2330DQUERY/Day%2001.pq
+https://github.com/itsnotaboutthecell/powerquerym/blob/master/%2330DQUERY/Day%2006.pq
  let
     Source = Sql.Database("MUBAR\SQLEXPRESS", "WideWorldImportersDW"),
     #"Dimension_Stock Item" = Source{[Schema="Dimension",Item="Stock Item"]}[Data],
