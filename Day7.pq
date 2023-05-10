@@ -2,6 +2,7 @@
 
 Instructions:
 Dynamically select all the columns that do not contain the text ‘Key’.
+*/
 
 //MY SOLUTION
 
