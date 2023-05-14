@@ -1,7 +1,9 @@
 /* Problem Challenge
 
 Instructions:
-Dynamically select all the columns that do not contain the text ‘Key’.
+Select [Gender], [EnglishEducation] and pivot the sum of [OrderQuantity] for [CommuteDistance]. 
+Sort the [EnglishEducation] from the lowest education level to the highest and the [Gender] column in ascending order.
+Re-order the [CommuteDistance] columns from the shortest to longest distance.
 */
 
 //MY SOLUTION
