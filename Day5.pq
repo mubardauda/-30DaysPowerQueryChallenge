@@ -33,28 +33,3 @@ let
     })
 in
     #"Removed Other Columns"
-
-
-//SOLUTION TO THE CHALLENGE
-https://github.com/itsnotaboutthecell/powerquerym/blob/master/%2330DQUERY/Day%2005.pq
-
-let
-    Source = Sql.Database("MUBAR\SQLEXPRESS", "WideWorldImportersDW"),
-    Dimension_Employee = Source{[Schema="Dimension",Item="Employee"]}[Data],
-    #"Filtered Rows" = Table.SelectRows(
-        Dimension_Employee, 
-        each (Date.Year([Valid To]) <> 9999 and [Is Salesperson] = true and Duration.TotalDays(
-            [Valid To] - [Valid From]
-        )
-            > 365)
-            or ([Is Salesperson] = false and Date.Year([Valid To]) = 9999)
-    ),
-    #"Removed Other Columns" = Table.SelectColumns(#"Filtered Rows",{
-        "Employee Key",
-        "Employee",
-        "Is Salesperson",
-        "Valid From",
-        "Valid To"
-    })
-in
-    #"Removed Other Columns"
