@@ -22,7 +22,7 @@ let
     #"Reordered Columns" = Table.ReorderColumns(#"Expanded DimCustomerW (2)",{"City Key", "City", "Average Delivery Days"}),
     #"Sorted Rows" = Table.Sort(#"Reordered Columns",{{"Average Delivery Days", Order.Descending}}),
     #"10th Value" = List.Sort(List.Distinct(#"Sorted Rows"[Average Delivery Days]), Order.Descending){10} - 1,
-	  #"Filter Top 10" = Table.SelectRows(#"Sorted Rows", each [Average Delivery Days] > #"10th Value"),
-	  #"Sorted Top10" = Table.Sort(#"Filter Top 10", {{"Average Delivery Days", Order.Descending}})
+	#"Filter Top 10" = Table.SelectRows(#"Sorted Rows", each [Average Delivery Days] > #"10th Value"),
+	#"Sorted Top10" = Table.Sort(#"Filter Top 10", {{"Average Delivery Days", Order.Descending}})
 in
 	#"Sorted Top10"
